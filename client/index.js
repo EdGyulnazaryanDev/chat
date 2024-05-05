@@ -8,7 +8,6 @@ let users = [];
 let messages = [];
 let isUser = "";
 
-
 socket.on("message", message => {
     messages.push(message);
     updateMessages();

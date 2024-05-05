@@ -35,8 +35,6 @@ io.on("connection", socket => {
             id: socket.id,
         });
     });
-
-
     socket.on("disconnect", () => {
         console.log(`user ${socket.user} is disconnected`);
         if (socket.user) {
