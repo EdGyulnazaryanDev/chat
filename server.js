@@ -12,9 +12,7 @@ const io = Socket(server, {
         methods: ["GET", "POST"],
     },
 });
-
 const users = [];
-
 io.on("connection", socket => {
     socket.on("adduser", username => {
         socket.user = username;
